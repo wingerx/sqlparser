@@ -744,6 +744,7 @@ func (m *BoundQuery) GetBindVariables() map[string]*BindVariable {
 	}
 	return nil
 }
+
 /*
 // ExecuteOptions is passed around for all Execute calls.
 type ExecuteOptions struct {

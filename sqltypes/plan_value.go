@@ -19,9 +19,9 @@ package sqltypes
 import (
 	"encoding/json"
 
-	querypb "github.com/wingerx/sqlparser/proto/query"
-	"fmt"
 	"errors"
+	"fmt"
+	querypb "github.com/wingerx/sqlparser/proto/query"
 )
 
 // PlanValue represents a value or a list of values for

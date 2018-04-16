@@ -21,8 +21,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/wingerx/sqlparser/sqltypes"
 	querypb "github.com/wingerx/sqlparser/proto/query"
+	"github.com/wingerx/sqlparser/sqltypes"
 )
 
 func TestNormalize(t *testing.T) {

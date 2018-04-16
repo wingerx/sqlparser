@@ -24,13 +24,13 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/wingerx/sqlparser/sqltypes"
 	"errors"
+	"github.com/wingerx/sqlparser/sqltypes"
 )
 
 // These constants are used to identify the SQL statement type.
 const (
-	StmtSelect   = iota
+	StmtSelect = iota
 	StmtStream
 	StmtInsert
 	StmtReplace

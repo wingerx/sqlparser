@@ -1,3 +1,4 @@
+# sqlparser [![Build Status](https://img.shields.io/travis/wingerx/sqlparser.svg)](https://travis-ci.org/wingerx/sqlparser) [![Coverage](https://img.shields.io/coveralls/wingerx/sqlparser.svg)](https://coveralls.io/github/wingerx/sqlparser) [![Report card](https://goreportcard.com/badge/github.com/wingerx/sqlparser)](https://goreportcard.com/report/github.com/wingerx/sqlparser) [![GoDoc](https://godoc.org/github.com/wingerx/sqlparser?status.svg)](https://godoc.org/github.com/wingerx/sqlparser)
 Go package for parsing MySQL SQL queries.
 
 ## Notice

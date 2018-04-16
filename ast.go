@@ -26,9 +26,9 @@ import (
 
 	log "github.com/golang/glog"
 
-	"github.com/wingerx/sqlparser/sqltypes"
-	querypb "github.com/wingerx/sqlparser/proto/query"
 	"errors"
+	querypb "github.com/wingerx/sqlparser/proto/query"
+	"github.com/wingerx/sqlparser/sqltypes"
 )
 
 // Instructions for creating new types: If a type
@@ -1160,7 +1160,7 @@ type LengthScaleOption struct {
 type ColumnKeyOption int
 
 const (
-	colKeyNone      ColumnKeyOption = iota
+	colKeyNone ColumnKeyOption = iota
 	colKeyPrimary
 	colKeyUnique
 	colKeyUniqueKey
@@ -2182,7 +2182,7 @@ type ValType int
 // be interpreted differently depending on the
 // context.
 const (
-	StrVal   = ValType(iota)
+	StrVal = ValType(iota)
 	IntVal
 	FloatVal
 	HexNum
