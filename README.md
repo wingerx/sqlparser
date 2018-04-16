@@ -55,15 +55,17 @@ See [parse_test.go](https://github.com/wingerx/sqlparser/blob/master/parse_test.
 You only need the below if you plan to try and keep this library up to date with [vitessio/vitess](https://github.com/vitessio/vitess).
 
 ### Keeping up to date
-# Update vitess.io & copy sqlparser,bytes2,hack, proto/query, sqltypes to $GOPATH/src/github.com/wingerx/sqlparser 
 ```bash
+# Update vitess.io & copy sqlparser,bytes2,hack, proto/query, sqltypes to $GOPATH/src/github.com/wingerx/sqlparser 
 cd $GOPATH/src/github.com/wingerx/sqlparser
+mkdir -p proto
 
 # Copy all the code
-cp -pr ../../youtube/vitess/go/vt/sqlparser/ .
-cp -pr ../../youtube/vitess/go/sqltypes .
-cp -pr ../../youtube/vitess/go/bytes2 .
-cp -pr ../../youtube/vitess/go/hack .
+cp -pr $GOPATH/src/vitess.io/vitess/go/vt/sqlparser/ .
+cp -pr $GOPATH/src/vitess.io/vitess/go/sqltypes .
+cp -pr $GOPATH/src/vitess.io/vitess/go/bytes2 .
+cp -pr $GOPATH/src/vitess.io/vitess/go/hack .
+cp -pr $GOPATH/src/vitess.io/vitess/go/proto/query ./proto/
 
 # Delete some code we haven't ported
 cd $GOPATH/src/github.com/wingerx/sqlparser
